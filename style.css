@@ -1,0 +1,32 @@
+/* Cor de fundo para a página inteira (Amarelo-claro: #FFFFE0) */
+.stApp {
+    background-color: #FFFFE0; /* Amarelo-claro */
+}
+
+/* Cor de fundo para o sidebar (Amarelo-claro: #FFFFE0) */
+.stSidebar {
+    background-color: #FFFFE0 !important; /* Amarelo-claro */
+}
+
+/* Cor de texto padrão (Cinza-escuro: #36454F) */
+/* Altera o texto principal */
+.stApp, .stApp p, .stApp span, .stApp div {
+    color: #36454F; /* Cinza-escuro */
+}
+
+/* Altera o texto do sidebar */
+.stSidebar .stMarkdown, .stSidebar .stSelectbox label {
+    color: #36454F !important; /* Cinza-escuro */
+}
+
+/* Cores de títulos, subtítulos e texto em negrito (Vermelho-vinho: #800020) */
+h1, h2, h3, h4, h5, h6, strong, b, .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp h5, .stApp h6 {
+    color: #800020; /* Vermelho-vinho */
+}
+
+/* Altera a cor de fundo dos botões (opcional, para combinar) */
+.stButton>button {
+    background-color: #FFFACD; /* Amarelo-claro pálido */
+    color: #800020; /* Vermelho-vinho */
+    border-color: #800020;
+}
