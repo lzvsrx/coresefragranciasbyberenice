@@ -36,7 +36,7 @@ Use o menu lateral (ícone das páginas do Streamlit) para navegar entre:
 
 # Mostra logo (verifique assets/logo.png)
 try:
-    st.image("assets/logo.png", width=250)
+    st.image("assets/logo.jpg", width=250)
 except Exception:
     st.info("Coloque a sua logo em assets/logo.png para exibir aqui.")
 
