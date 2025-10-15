@@ -1,11 +1,17 @@
 import streamlit as st
+import os
 from utils.database import create_tables
 
 
 # Inicializa o banco de dados e as tabelas
 create_tables()
 def load_css(file_name):
-    with open(file_name) as f:
+    """Carrega e aplica o CSS personalizado, forçando a codificação UTF-8."""
+    if not os.path.exists(file_name):
+        st.warning(f"O arquivo CSS '{file_name}' não foi encontrado.")
+        return
+    # Adicione encoding='utf-8' para resolver o problema de decodificação.
+    with open(file_name, encoding='utf-8') as f: 
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 load_css("style.css")
 
@@ -25,6 +31,7 @@ Use o menu lateral (ícone das páginas do Streamlit) para navegar entre:
 - 💰 Produtos Vendidos
 - 🔐 Área Administrativa (login / cadastro)
 - 🛠️ Gerenciar Produtos (somente após login)
+- 🤖 Chatbot de Estoque
 """)
 
 # Mostra logo (verifique assets/logo.png)
